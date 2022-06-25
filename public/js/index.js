@@ -30,7 +30,7 @@ function doCORSRequest(options) {
   var x = new XMLHttpRequest();
   console.log(options.method, cors_api_url + options.url);
 
-  x.open(options.method, "../Media/rss.xml"); //Если сайт говорит что много вопросов попробуй считать локальную копию
+  x.open(options.method, "./Media/rss.xml"); //Если сайт говорит что много вопросов попробуй считать локальную копию
   //x.open(options.method, cors_api_url + options.url); // А эту строку закоментируй
   x.onload = x.onerror = function () {
     parser(x.responseText);
