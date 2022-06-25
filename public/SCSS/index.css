@@ -7,6 +7,14 @@
 .content button {
   margin: 15px;
 }
+.content button :hover {
+  transform: 0.5s, border, rgb(155, 200, 155);
+}
+
+.wrapperList {
+  overflow: auto;
+  height: 70vmin;
+}
 
 .borderline {
   border-bottom: 0.3rem solid rgba(100, 100, 100, 0.6);
@@ -37,7 +45,6 @@ html {
   margin: 0;
   padding: 0;
 }
-
 .menu li {
   padding: 8px;
   margin-bottom: 7px;
@@ -45,7 +52,6 @@ html {
   color: #ffffff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-
 .menu li:hover {
   background-color: #0099cc;
 }
@@ -76,7 +82,14 @@ html {
 }
 
 .content-center {
-  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 12em;
+}
+
+.carousel img {
+  background-color: #9933cc;
+  border: 4mm ridge rgba(211, 220, 50, 0.6);
 }
 
 .button {
@@ -84,7 +97,7 @@ html {
   border-radius: 12px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.button :hover {
+.button:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -104,42 +117,50 @@ html {
   background-color: #4caf50;
 }
 
-/* Green */
 .blue {
   background-color: #008cba;
 }
 
-/* Blue */
 .red {
   background-color: #f44336;
 }
 
-/* Red */
 .white {
   background-color: #e7e7e7;
   color: black;
 }
 
-/* Gray */
 .gray {
   background-color: #555555;
 }
 
-/* Black */
+.border {
+  border: 4mm ridge rgba(211, 220, 50, 0.6);
+}
+
+#element::-webkit-scrollbar {
+  width: 10px;
+}
+#element::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+  border-radius: 10px;
+}
+#element::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, #00c6fb, #005bea);
+}
+
 [class*=col-] {
   float: left;
   padding: 15px;
-}
-
-/* For mobile phones: */
-[class*=col-] {
   width: 100%;
 }
 
 @media only screen and (min-width: 576px) {
-  /* For tablets: */
   .col-m-12 {
     width: 8.33%;
+    width: 100%;
   }
 
   .col-m-2 {
@@ -181,13 +202,8 @@ html {
   .col-m-11 {
     width: 91.66%;
   }
-
-  .col-m-12 {
-    width: 100%;
-  }
 }
-@media only screen and (min-width: 992px) {
-  /* For desktop: */
+@media only screen and (min-width: 1200px) {
   .col-1 {
     width: 8.33%;
   }
