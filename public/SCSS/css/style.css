@@ -6,9 +6,10 @@
 }
 .content button {
   margin: 15px;
+  opacity: 0.6;
 }
 .content button :hover {
-  transform: 0.5s, border, rgb(155, 200, 155);
+  opacity: 1;
 }
 
 .iframeConfirm {
@@ -63,6 +64,10 @@
 
 html {
   font-family: "Lucida Sans", sans-serif;
+}
+
+.images {
+  width: 12em;
 }
 
 .header {

@@ -8,155 +8,179 @@
     <link rel="stylesheet" href="./SCSS/css/style.css" />
   </head>
   <body id="element">
-
-
-    <div id="closeIframeConfirm" class="iframeConfirm">      
+    <div id="closeIframeConfirm" class="iframeConfirm">
       <div class="gradient-bg">
         <h1>Одну секундочку.....</h1>
-        <h4>В этой демо странице используется один костыль пожалуйста разрешите политику "Cross-Origin Resource Sharing (CORS)"  нажав на кнопку в iframe</h4>
-        <p>Не большое пояснение что собственно происходит из-за политики безопасности Кросс-Доменных запросов просто так нельзя отправить запрос по типу ("GET https://cors-anywhere.herokuapp.com/http://bashorg.org//rss.xml") по этому приходится выкручиваться с помощью подставного сервиса который разрешает Кросс-Доменые запросы.
-        И всё это для того что бы вы мой дорогой<img class="emoji" src="./Media/heart_hands.png" alt=""> проверяющий почитали анекдоты со всего интернета на
-         <a href="http://bashorg.org" target="_blank">bashorg.org</a></p>
-        <iframe width="500" height="160" src="https://cors-anywhere.herokuapp.com/corsdemo"></iframe>
-        <div><button onclick="closeIframeConfirm()">Я уже нажал и подтвердил что хочу использовать этот костыль</button></div></div>
+        <h4>
+          В этой демо странице используется один костыль пожалуйста разрешите
+          политику "Cross-Origin Resource Sharing (CORS)" нажав на кнопку в
+          iframe
+        </h4>
+        <p>
+          Не большое пояснение что собственно происходит из-за политики
+          безопасности Кросс-Доменных запросов просто так нельзя отправить
+          запрос по типу ("GET
+          https://cors-anywhere.herokuapp.com/http://bashorg.org//rss.xml") по
+          этому приходится выкручиваться с помощью подставного сервиса который
+          разрешает Кросс-Доменые запросы. И всё это для того что бы вы мой
+          дорогой<img class="emoji" src="./Media/heart_hands.png" alt="" />
+          проверяющий почитали анекдоты со всего интернета на
+          <a href="http://bashorg.org" target="_blank">bashorg.org</a>
+        </p>
+        <iframe
+          width="500"
+          height="160"
+          src="https://cors-anywhere.herokuapp.com/corsdemo"
+        ></iframe>
+        <div>
+          <button onclick="closeIframeConfirm()">
+            Я уже нажал и подтвердил что хочу использовать этот костыль
+          </button>
+        </div>
+      </div>
     </div>
 
     <div class="main">
-        <div class="gradient-bg">
-
-          <div id="top" class="header">
-            <div class="row">
-              <div class="col-1">Чпоньк !</div>
-              <div class="col-1">Тык!</div>
-              <div class="col-1">Клац!</div>
-              <div class="col-9"></div>
-            </div>
+      <div class="gradient-bg">
+        <div id="top" class="header">
+          <div class="row">
+            <div class="col-1">Чпоньк !</div>
+            <div class="col-1">Тык!</div>
+            <div class="col-1">Клац!</div>
+            <div class="col-9"></div>
           </div>
+        </div>
 
-          <div class="wrapperList">
-            <div class="row borderline">
-              <div class="col-12">
-                <div class="content gray">
-                  <h4>Листай ниже, ты же хочешь почитать Башорг ? )</h4>
-                  P.s Текст загружается напрямую с сайта bashorg.org конвертируется
-                  xml потом парситься и получается эта вкуснятина ))) <br />
-                  <a href="#list" class="button buttonLarge blue">
-                    &nbsp;Read more&nbsp;
-                  </a>
-                </div>
+        <div class="wrapperList">
+          <div class="row borderline">
+            <div class="col-12">
+              <div class="content gray">
+                <h4>Листай ниже, ты же хочешь почитать Башорг ? )</h4>
+                P.s Текст загружается напрямую с сайта bashorg.org
+                конвертируется xml потом парситься и получается эта вкуснятина
+                ))) <br />
+                <a href="#list" class="button buttonLarge blue">
+                  &nbsp;Read more&nbsp;
+                </a>
               </div>
             </div>
-
-            <div class="row borderline">
-              <div class="col-12">
-                <div class="content">
-                  <h4>Еще ниже )))</h4>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates
-                  neque sint architecto minus. Consequatur accusamus dolor harum
-                  dolore! Temporibus pariatur cum, ab vero placeat alias expedita
-                  quasi laboriosam aspernatur adipisci.<br />
-                  <button class="button buttonMedium blue content-right">
-                    <a href="#list">Read more</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="row borderline">
-              <div class="col-12">
-                <div class="content">
-                  <h4>Осталось совсем не много, ты справишься! xD</h4>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates
-                  neque sint architecto minus. Consequatur accusamus dolor harum
-                  dolore! Temporibus pariatur cum, ab vero placeat alias expedita
-                  quasi laboriosam aspernatur adipisci.<br />
-                  <button class="button buttonMedium blue content-right">
-                    <a href="#list">Read more</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div name="list" id="list"></div>
-          </div>
-
-          <div class="row border gray">
-            <div class="col-3 col-m-3"></div>
-            <div class="col-6 col-m-6">
-              <div class="carousel">
-                <img
-                  width="30%"
-                  src="https://thumb.tildacdn.com/tild3839-6337-4438-a564-383961333162/-/resize/50x/-/format/webp/logo.png"
-                />
-                <img
-                  width="30%"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ66z7V5DW-s1lf76__PGBOY_87lDn8bUpFGUhsIlX8WFTeoZ8fX3ksfHJJNBm1kG6S0Wo&usqp=CAU"
-                />
-                <img
-                  width="30%"
-                  src="https://thumb.tildacdn.com/tild3839-6337-4438-a564-383961333162/-/resize/50x/-/format/webp/logo.png"
-                />
-              </div>
-            </div>
-            <div class="col-3 col-m-3"></div>
-          </div>
-
-          <div class="content-center">
-            <button class="button buttonLarge blue">
-              <a href="#top">Окей, я понял пошли наверх</a>
-            </button>
           </div>
 
           <div class="row borderline">
-            <div class="col-3 col-m-3 menu">
-              <ul>
-                <li>Постоянный количественный рост оправдал надежды граждан</li>
-                <li>Звук клавиш печатной машинки не стал ограничивающим фактором</li>
-                <li>
-                  Светлый лик правового взаимодействия развеял последние сомнения
-                </li>
-                <li>
-                  Реализация намеченных плановых заданий даёт нам право принимать
-                  самостоятельные решения
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-6 col-m-9">
-              <h1>Текст-рыба на русском языке</h1>
-              <p>
-                С учётом сложившейся международной обстановки, повышение уровня
-                гражданского сознания требует анализа прогресса профессионального
-                сообщества! Учитывая ключевые сценарии поведения, укрепление и
-                развитие внутренней структуры однозначно фиксирует необходимость
-                кластеризации усилий. Внезапно, стремящиеся вытеснить традиционное
-                производство, нанотехнологии, вне зависимости от их уровня, должны
-                быть объявлены нарушающими общечеловеческие нормы этики и морали.
-              </p>
-            </div>
-
-            <div class="col-3 col-m-12">
-              <div class="aside">
-                <h2>Что?</h2>
-                <p>
-                  Свободу слова не задушить, пусть даже был сорван доклад председателя
-                  совхоза
-                </p>
-                <h2>Где?</h2>
-                <p>Сейчас всё чаще звучит боевой клич героев</p>
-                <h2>Как?</h2>
-                <p>Случайный текст похож на полуночный пёсий вой</p>
+            <div class="col-12">
+              <div class="content">
+                <h4>Еще ниже )))</h4>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptates neque sint architecto minus. Consequatur accusamus
+                dolor harum dolore! Temporibus pariatur cum, ab vero placeat
+                alias expedita quasi laboriosam aspernatur adipisci.<br />
+                <a href="#list" class="button buttonMedium blue content-right">
+                  Read more
+                </a>
               </div>
             </div>
           </div>
 
-          <div class="footer">
-            <p>
-              <h4>Попробуйте по изменять размер сайта (Резиновая верстка типо бутстрапа)
-              должно все хорошо работать...... Наверное ?</h4>
+          <div class="row borderline">
+            <div class="col-12">
+              <div class="content">
+                <h4>Осталось совсем не много, ты справишься! xD</h4>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptates neque sint architecto minus. Consequatur accusamus
+                dolor harum dolore! Temporibus pariatur cum, ab vero placeat
+                alias expedita quasi laboriosam aspernatur adipisci.<br />
 
+                <a class="button buttonMedium blue content-right" href="#list"
+                  >Read more</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div id="list"></div>
+        </div>
+
+        <div class="row border gray">
+          <div class="col-3 col-m-3"></div>
+          <div class="col-6 col-m-6">
+            <div class="carousel">
+              <img
+                class="images"
+                alt="1"
+                src="https://thumb.tildacdn.com/tild3839-6337-4438-a564-383961333162/-/resize/50x/-/format/webp/logo.png"
+              />
+              <img
+                class="images"
+                alt="2"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ66z7V5DW-s1lf76__PGBOY_87lDn8bUpFGUhsIlX8WFTeoZ8fX3ksfHJJNBm1kG6S0Wo&usqp=CAU"
+              />
+              <img
+                class="images"
+                alt="3"
+                src="https://thumb.tildacdn.com/tild3839-6337-4438-a564-383961333162/-/resize/50x/-/format/webp/logo.png"
+              />
+            </div>
+          </div>
+          <div class="col-3 col-m-3"></div>
+        </div>
+
+        <div class="content-center">
+          <a href="#top" class="button buttonLarge blue"
+            >Окей, я понял пошли наверх</a
+          >
+        </div>
+
+        <div class="row borderline">
+          <div class="col-3 col-m-3 menu">
+            <ul>
+              <li>Постоянный количественный рост оправдал надежды граждан</li>
+              <li>
+                Звук клавиш печатной машинки не стал ограничивающим фактором
+              </li>
+              <li>
+                Светлый лик правового взаимодействия развеял последние сомнения
+              </li>
+              <li>
+                Реализация намеченных плановых заданий даёт нам право принимать
+                самостоятельные решения
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-m-9">
+            <h1>Текст-рыба на русском языке</h1>
+            <p>
+              С учётом сложившейся международной обстановки, повышение уровня
+              гражданского сознания требует анализа прогресса профессионального
+              сообщества! Учитывая ключевые сценарии поведения, укрепление и
+              развитие внутренней структуры однозначно фиксирует необходимость
+              кластеризации усилий. Внезапно, стремящиеся вытеснить традиционное
+              производство, нанотехнологии, вне зависимости от их уровня, должны
+              быть объявлены нарушающими общечеловеческие нормы этики и морали.
             </p>
           </div>
+
+          <div class="col-3 col-m-12">
+            <div class="aside">
+              <h2>Что?</h2>
+              <p>
+                Свободу слова не задушить, пусть даже был сорван доклад
+                председателя совхоза
+              </p>
+              <h2>Где?</h2>
+              <p>Сейчас всё чаще звучит боевой клич героев</p>
+              <h2>Как?</h2>
+              <p>Случайный текст похож на полуночный пёсий вой</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <h4>
+            Попробуйте по изменять размер сайта (Резиновая верстка типо
+            бутстрапа) должно все хорошо работать...... Наверное ?
+          </h4>
+        </div>
       </div>
     </div>
     <script src="./js/index.js"></script>
