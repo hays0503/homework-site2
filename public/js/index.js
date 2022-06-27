@@ -40,6 +40,13 @@ function doCORSRequest(options) {
 
 function closeIframeConfirm() {
   var someIframe = window.parent.document.getElementById("closeIframeConfirm");
+  var urlField = url;
+  var outputField = document.getElementById("list");
+  doCORSRequest({
+    method: "GET",
+    url: url,
+  });
+  document.getElementById("element").style.overflow = "visible";
   someIframe.parentNode.removeChild(
     window.parent.document.getElementById("closeIframeConfirm")
   );
@@ -47,10 +54,5 @@ function closeIframeConfirm() {
 
 // Bind event
 (function () {
-  var urlField = url;
-  var outputField = document.getElementById("list");
-  doCORSRequest({
-    method: "GET",
-    url: url,
-  });
+  document.getElementById("element").style.overflow = "hidden";
 })();
