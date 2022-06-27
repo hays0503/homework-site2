@@ -6,7 +6,6 @@
 }
 .content button {
   margin: 15px;
-  opacity: 0.6;
 }
 .content button :hover {
   opacity: 1;
@@ -39,7 +38,11 @@
   height: 100%;
   z-index: 1;
   background: rgba(63, 94, 251, 0.5);
-  background: radial-gradient(circle, rgba(63, 94, 251, 0.5) 0%, rgba(252, 70, 107, 0.5) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 0.5) 0%,
+    rgba(252, 70, 107, 0.5) 100%
+  );
 }
 
 .wrapperList {
@@ -67,7 +70,7 @@ html {
 }
 
 .images {
-  width: 12em;
+  width: 30em;
 }
 
 .header {
@@ -145,7 +148,8 @@ html {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .buttonSmall {
@@ -203,7 +207,7 @@ html {
   background: linear-gradient(180deg, #00c6fb, #005bea);
 }
 
-[class*=col-] {
+[class*="col-"] {
   float: left;
   padding: 15px;
   width: 100%;
@@ -303,4 +307,4 @@ html {
   .col-12 {
     width: 100%;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

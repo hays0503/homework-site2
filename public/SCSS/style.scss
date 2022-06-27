@@ -5,8 +5,9 @@
   }
   button {
     margin: 15px;
+    opacity: 0.6;
     :hover {
-      transform: 0.5s, border, rgba(155, 200, 155);
+      opacity: 1;
     }
   }
 }
@@ -65,6 +66,11 @@
 html {
   font-family: "Lucida Sans", sans-serif;
 }
+
+.images {
+  width: 12em;
+}
+
 .header {
   position: fixed;
   top: 0px;
